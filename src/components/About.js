@@ -8,12 +8,13 @@ import LogoNode from "./svgs/LogoNode";
 import LogoExpress from "./svgs/LogoExpress";
 import LogoMongo from "./svgs/LogoMongo";
 import LogoGit from "./svgs/LogoGit";
+import LogoReact from "./svgs/LogoReact";
 
 const About = React.forwardRef((props, ref) => {
   return (
-    <div ref={ref} className="h-screen about-background">
+    <div ref={ref} className="h-max about-background pb-48 pt-48">
       {/* Container */}
-      <div className="h-full container px-12 mx-auto flex flex-col justify-center space-y-5 font-mono">
+      <div className="h-full container px-12 mx-auto flex flex-col justify-center space-y-5 font-sans">
         {/* Title about me */}
         <div className="pb-10">
           <h2 className="text-princetonOrange text-center text-4xl font-bold">
@@ -21,13 +22,13 @@ const About = React.forwardRef((props, ref) => {
           </h2>
         </div>
         {/* Content div */}
-        <div className="grid grid-cols-2 gap-16 text-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 text-lg">
           {/* About me div */}
           <div>
             {/* About me text */}
             <div className="text-xicatic pb-5 text-justify">
               <p>
-                My name is Andres Lopez, I am a
+                My name is Andres Lopez, I am an engineer and a
                 <span className="text-princetonOrange font-bold">
                   {" "}
                   Web Developer{" "}
@@ -49,7 +50,7 @@ const About = React.forwardRef((props, ref) => {
             </div>
             {/* Download resume button */}
             <div className="flex flex-row justify-center">
-              <button className="border-princetonOrange bg-princetonOrange text-white rounded-lg border-2 border-solid px-4 py-2 flex flex-row transition duration-200 transform hover:-translate-y-0.5 hover:scale-105">
+              <button className="border-cadetBlue bg-cadetBlue text-white rounded-lg border-2 border-solid px-4 py-2 flex flex-row transition duration-200 transform hover:-translate-y-0.5 hover:scale-105">
                 <Download logoClass="h-6 w-6" />
                 <p className="pl-2">Download resume</p>
               </button>
@@ -59,7 +60,7 @@ const About = React.forwardRef((props, ref) => {
           <div className="text-xicatic">
             {/* Skills title */}
             <div className="text-center pb-10">
-              <h3 className="text-2xl">Skills</h3>
+              <h3 className="text-2xl text-cadetBlue font-bold">My toolbox</h3>
             </div>
             {/* Actual skills */}
             <div className="grid grid-cols-3 gap-y-5">
@@ -81,7 +82,10 @@ const About = React.forwardRef((props, ref) => {
               <div className="m-auto">
                 <LogoMongo logoClass="h-14 w-32" />
               </div>
-              <div className="m-auto col-span-3">
+              <div className="m-auto">
+                <LogoReact logoClass="h-14 w-32" />
+              </div>
+              <div className="m-auto">
                 <LogoGit logoClass="h-16 w-32" />
               </div>
             </div>

@@ -45,7 +45,7 @@ const Hero = (props) => {
             onClick={scrollDown}
           >
             <div>Scroll down</div>
-            <ArrowDown logoClass="animate-bounce h-6 w-6 text-princetonOrange" />
+            <ArrowDown logoClass="animate-bounce h-6 w-6 text-cadetBlue" />
           </button>
         </div>
       </div>
