@@ -1,5 +1,5 @@
-import React from "react";
-import ContactForm from "./ContactForm";
+import React from 'react';
+import ContactForm from './ContactForm';
 
 const Contact = React.forwardRef((props, ref) => {
   return (
@@ -16,7 +16,7 @@ const Contact = React.forwardRef((props, ref) => {
           <div className="mx-auto">
             <div className="pb-8  ">
               <h5 className="font-bold text-lg">Phone</h5>
-              <p>Mobile: +52 999 280 4555</p>
+              <p>+52 999 280 4555</p>
             </div>
             <div className="pb-8  ">
               <h5 className="font-bold text-lg">Email</h5>
@@ -24,11 +24,25 @@ const Contact = React.forwardRef((props, ref) => {
             </div>
             <div className="pb-8  ">
               <h5 className="font-bold text-lg">LinkedIn</h5>
-              <p>Javier's Profile</p>
+              <a
+                href="https://www.linkedin.com/in/andr%C3%A9s-javier-l%C3%B3pez-d%C3%ADaz-33a228182/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-princetonOrange underline hover:text-yellow-500"
+              >
+                Javier's Profile
+              </a>
             </div>
             <div className="pb-8  ">
               <h5 className="font-bold text-lg">GitHub</h5>
-              <p>javlopezdi's repository</p>
+              <a
+                href="https://github.com/javlopezdi"
+                target="_blank"
+                rel="noreferrer"
+                className="text-princetonOrange underline hover:text-yellow-500"
+              >
+                javlopezdi's repository
+              </a>
             </div>
           </div>
           {/* Contact form */}

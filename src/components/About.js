@@ -1,14 +1,14 @@
-import React from "react";
-import "../styles/About.css";
-import Download from "./svgs/Download";
-import LogoHtml from "./svgs/LogoHtml";
-import LogoCss from "./svgs/LogoCss";
-import LogoJavaScript from "./svgs/LogoJavaScript";
-import LogoNode from "./svgs/LogoNode";
-import LogoExpress from "./svgs/LogoExpress";
-import LogoMongo from "./svgs/LogoMongo";
-import LogoGit from "./svgs/LogoGit";
-import LogoReact from "./svgs/LogoReact";
+import React from 'react';
+import '../styles/About.css';
+import Download from './svgs/Download';
+import LogoHtml from './svgs/LogoHtml';
+import LogoCss from './svgs/LogoCss';
+import LogoJavaScript from './svgs/LogoJavaScript';
+import LogoNode from './svgs/LogoNode';
+import LogoExpress from './svgs/LogoExpress';
+import LogoMongo from './svgs/LogoMongo';
+import LogoGit from './svgs/LogoGit';
+import LogoReact from './svgs/LogoReact';
 
 const About = React.forwardRef((props, ref) => {
   return (
@@ -30,8 +30,8 @@ const About = React.forwardRef((props, ref) => {
               <p>
                 My name is Andres Lopez, I am an engineer and a
                 <span className="text-princetonOrange font-bold">
-                  {" "}
-                  Web Developer{" "}
+                  {' '}
+                  Full Stack Web Developer{' '}
                 </span>
                 in Yucatan, Mexico. I enjoy using Javascript related
                 technologies to build the FrontEnd and the BackEnd of cool Web
