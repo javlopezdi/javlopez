@@ -9,6 +9,7 @@ import LogoExpress from './svgs/LogoExpress';
 import LogoMongo from './svgs/LogoMongo';
 import LogoGit from './svgs/LogoGit';
 import LogoReact from './svgs/LogoReact';
+import Resume from '../Resume_Andres_Lopez.pdf';
 
 const About = React.forwardRef((props, ref) => {
   return (
@@ -50,10 +51,14 @@ const About = React.forwardRef((props, ref) => {
             </div>
             {/* Download resume button */}
             <div className="flex flex-row justify-center">
-              <button className="border-cadetBlue bg-cadetBlue text-white rounded-lg border-2 border-solid px-4 py-2 flex flex-row transition duration-200 transform hover:-translate-y-0.5 hover:scale-105">
+              <a
+                href={Resume}
+                download
+                className="border-cadetBlue bg-cadetBlue text-white rounded-lg border-2 border-solid px-4 py-2 flex flex-row transition duration-200 transform hover:-translate-y-0.5 hover:scale-105"
+              >
                 <Download logoClass="h-6 w-6" />
                 <p className="pl-2">Download resume</p>
-              </button>
+              </a>
             </div>
           </div>
           {/* Skills div */}
