@@ -29,7 +29,7 @@ const About = React.forwardRef((props, ref) => {
             {/* About me text */}
             <div className="text-xicatic pb-5 text-justify">
               <p>
-                My name is Andres Lopez, I am an engineer and a
+                My name is Javier Lopez, I am an engineer and a
                 <span className="text-princetonOrange font-bold">
                   {' '}
                   Full Stack Web Developer{' '}
