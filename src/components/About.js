@@ -10,6 +10,7 @@ import LogoMongo from './svgs/LogoMongo';
 import LogoGit from './svgs/LogoGit';
 import LogoReact from './svgs/LogoReact';
 import Resume from '../Resume_Andres_Lopez.pdf';
+import LogoPostgresql from './svgs/LogoPostgresql';
 
 const About = React.forwardRef((props, ref) => {
   return (
@@ -34,9 +35,9 @@ const About = React.forwardRef((props, ref) => {
                   {' '}
                   Full Stack Web Developer{' '}
                 </span>
-                in Yucatan, Mexico. I enjoy using Javascript related
-                technologies to build the FrontEnd and the BackEnd of cool Web
-                Applications that solve real problems
+                in Mexico. I enjoy using Javascript related technologies to
+                build the FrontEnd and the BackEnd of Web Applications that
+                solve real problems
               </p>
               <br />
               <p>
@@ -92,6 +93,9 @@ const About = React.forwardRef((props, ref) => {
               </div>
               <div className="m-auto">
                 <LogoGit logoClass="h-16 w-32" />
+              </div>
+              <div className="m-auto">
+                <LogoPostgresql logoClass="h-16 w-32" />
               </div>
             </div>
           </div>

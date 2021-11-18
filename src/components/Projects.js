@@ -2,11 +2,12 @@ import React from 'react';
 import '../styles/Projects.css';
 import ProjectCard from './ProjectCard';
 import hskToolboxImage from '../images/hsktoolbox.png';
-import yelpCampImage from '../images/yelpcamp.png';
+import dogsPiImage from '../images/dogspi.png';
 import LogoReact from './svgs/LogoReact';
 import LogoMongo from './svgs/LogoMongo';
 import LogoExpress from './svgs/LogoExpress';
 import LogoNode from './svgs/LogoNode';
+import LogoPostgresql from './svgs/LogoPostgresql';
 
 const Projects = React.forwardRef((props, ref) => {
   return (
@@ -41,17 +42,18 @@ const Projects = React.forwardRef((props, ref) => {
             ]}
           />
           <ProjectCard
-            title="Yelp Camp"
+            title="Dogs PI"
             descriptionParagraphs={[
-              `YelpCamp is an Express Web Application where you can watch or post reviews of Campground sites around the world`,
-              'Anybody can watch the campgrounds and reviews, but to add any you must be signed in',
-              'This Web App was made as the final project for The Web Developer Bootcamp by Colt Steele',
+              `The Dogs PI was made as the Individual Project for the Henry Bootcamp using The Dog API`,
+              'Here you can find information about the breeds in The Dog API, you can watch the list of breeds, filter and sort',
+              'You can even create your own Dog Breed which will be saved in the database',
             ]}
-            image={yelpCampImage}
-            siteLink="https://afternoon-reef-37075.herokuapp.com/"
-            repoLink="https://github.com/javlopezdi/YelpCamp"
+            image={dogsPiImage}
+            siteLink="https://dogsdemo.herokuapp.com"
+            repoLink="https://github.com/javlopezdi/PI-Dogs-main"
             techLogos={[
-              <LogoMongo logoClass="h-12 w-32" />,
+              <LogoPostgresql logoClass="h-14 w-32" />,
+              <LogoReact logoClass="h-12 w-32" />,
               <LogoExpress logoClass="h-12 w-32" />,
               <LogoNode logoClass="h-12 w-32" />,
             ]}

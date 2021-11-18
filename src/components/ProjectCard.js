@@ -13,7 +13,11 @@ const ProjectCard = ({
 }) => {
   const renderDescription = () => {
     return descriptionParagraphs.map((paragraph) => {
-      return <p className="text-justify text-white">{paragraph}</p>;
+      return (
+        <p className="text-justify text-white leading-none md:leading-normal">
+          {paragraph}
+        </p>
+      );
     });
   };
 
