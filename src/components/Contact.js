@@ -25,7 +25,7 @@ const Contact = React.forwardRef((props, ref) => {
             <div className="pb-8  ">
               <h5 className="font-bold text-lg">LinkedIn</h5>
               <a
-                href="https://www.linkedin.com/in/andr%C3%A9s-javier-l%C3%B3pez-d%C3%ADaz-33a228182/"
+                href="www.linkedin.com/in/andreslopez-developer"
                 target="_blank"
                 rel="noreferrer"
                 className="text-princetonOrange underline hover:text-yellow-500"
